@@ -2,12 +2,6 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0f,30:0d1b2a,60:1a1a2e,100:16213e&height=220&section=header&text=Islam%20Kuttybaev&fontSize=56&fontColor=e2e8f0&fontAlignY=40&desc=Data%20Scientist%20·%20ML%20Engineer%20·%20SDU%20University&descAlignY=62&descSize=17&animation=fadeIn" width="100%"/>
 
-<br/>
-
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&pause=1200&color=38BDF8&center=true&vCenter=true&width=580&lines=Building+end-to-end+ML+pipelines+🤖;Statistical+modeling+%26+data+storytelling+📊;NLP+|+Time+Series+|+Supervised+Learning;Teaching+Assistant+%40+SDU+University+🎓;Open+to+internships+%26+research+collaborations" alt="Typing SVG" />
-</a>
-
 <br/><br/>
 
 [![Telegram](https://img.shields.io/badge/@rule__46-229ED9?style=flat-square&logo=telegram&logoColor=white&labelColor=0a0a0f)](https://t.me/rule_46)
@@ -118,10 +112,6 @@ class IslamKuttybaev:
 <img src="https://github-readme-stats.vercel.app/api?username=Hashick1812&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38bdf8&icon_color=38bdf8&text_color=e2e8f0&ring_color=38bdf8&include_all_commits=true&count_private=true" width="48%"/>
 &nbsp;
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hashick1812&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=e2e8f0&langs_count=6" width="42%"/>
-
-<br/><br/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Hashick1812&theme=tokyonight&hide_border=true&background=0d1117&stroke=38bdf8&ring=38bdf8&fire=f97316&currStreakNum=e2e8f0&sideNums=e2e8f0&currStreakLabel=38bdf8&sideLabels=38bdf8&dates=64748b" width="55%"/>
 
 </div>
 
