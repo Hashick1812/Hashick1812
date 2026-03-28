@@ -12,6 +12,7 @@
 
 [![Telegram](https://img.shields.io/badge/@rule__46-229ED9?style=flat-square&logo=telegram&logoColor=white&labelColor=0a0a0f)](https://t.me/rule_46)
 [![GitHub](https://img.shields.io/badge/Hashick1812-0d1117?style=flat-square&logo=github&logoColor=white&labelColor=0a0a0f)](https://github.com/Hashick1812)
+[![Email](https://img.shields.io/badge/islam0402@list.ru-005FF9?style=flat-square&logo=mailru&logoColor=white&labelColor=0a0a0f)](mailto:islam0402@list.ru)
 [![Location](https://img.shields.io/badge/Almaty%2C%20Kazakhstan-🇰🇿-0a0a0f?style=flat-square&labelColor=0a0a0f&color=334155)](https://maps.google.com/?q=Almaty)
 [![SDU](https://img.shields.io/badge/SDU%20University-3rd%20Year-38bdf8?style=flat-square&labelColor=0a0a0f)](https://sdu.edu.kz)
 
@@ -127,6 +128,7 @@ class IslamKuttybaev:
 > Feel free to reach out!
 
 [![Telegram](https://img.shields.io/badge/Message%20me%20on%20Telegram-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rule_46)
+[![Email](https://img.shields.io/badge/islam0402@list.ru-005FF9?style=for-the-badge&logo=mailru&logoColor=white)](mailto:islam0402@list.ru)
 
 ---
 
