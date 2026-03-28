@@ -2,6 +2,10 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0f,30:0d1b2a,60:1a1a2e,100:16213e&height=220&section=header&text=Islam%20Kuttybaev&fontSize=56&fontColor=e2e8f0&fontAlignY=40&desc=Data%20Scientist%20·%20ML%20Engineer%20·%20SDU%20University&descAlignY=62&descSize=17&animation=fadeIn" width="100%"/>
 
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=2800&pause=800&color=38BDF8&center=true&vCenter=true&width=700&lines=🎓+3rd+year+Data+Science+student+%40+SDU+University%2C+Kazakhstan;🤖+Building+ML+pipelines+%7C+NLP+%7C+Time+Series+%7C+Regression;🏫+Teaching+Assistant+%2B+Tutor+at+Azat+Academia+since+2023;📊+Power+BI+%7C+Python+%7C+SQL+%7C+Scikit-learn+%7C+Statsmodels;🚀+Seeking+Data+Science+internship+—+Summer+2025;🌍+Almaty%2C+Kazakhstan+%7C+Kazakh+%7C+Russian+%7C+English" alt="Typing SVG" />
+
 <br/><br/>
 
 [![Telegram](https://img.shields.io/badge/@rule__46-229ED9?style=flat-square&logo=telegram&logoColor=white&labelColor=0a0a0f)](https://t.me/rule_46)
