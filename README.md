@@ -4,7 +4,7 @@
 
 <!--TYPING SVG-->
 <p align="center">
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&pause=900&color=38BDF8&center=true&vCenter=true&width=700&lines=🎓+3rd+year+Data+Science+%40+SDU+University%2C+Kazakhstan;🤖+ML+pipelines+·+NLP+·+Time+Series+·+Regression;🏫+Teaching+Assistant+%2B+Tutor+at+Azat+Academia;📊+Power+BI+·+Python+·+SQL+·+Scikit-learn;🚀+Seeking+Data+Science+Internship+—+Summer+2025;🌍+Almaty+🇰🇿+·+Kazakh+·+Russian+·+English" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=16&pause=900&color=38BDF8&center=true&vCenter=true&width=700&lines=🎓+3rd+year+Data+Science+%40+SDU+University%2C+Kazakhstan;🤖+ML+pipelines+%7C+NLP+%7C+Time+Series+%7C+Regression;🏫+Teaching+Assistant+%2B+Tutor+at+Azat+Academia;📊+Power+BI+%7C+Python+%7C+SQL+%7C+Scikit-learn;🚀+Seeking+Data+Science+Internship+-+Summer+2025;🌍+Almaty+KZ+%7C+Kazakh+%7C+Russian+%7C+English" alt="Typing SVG" />
 
 <!--LINE-->
 <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
