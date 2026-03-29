@@ -33,7 +33,7 @@
 @@    ██║███████║███████╗██║  ██║██║ ╚═╝ ██║                             @@
 @@    ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝                             @@
 @@                                                                       @@
-@@   🎓 SDU University · Data Science & Statistics · 3rd Year (GPA 2.77) @@
+@@   🎓 SDU University · Data Science & Statistics · 3rd Year (GPA 2.82) @@
 @@   🤖 Roles: Data Scientist · ML Engineer · Teaching Assistant          @@
 @@   🔬 PhD Research Assistant · Tutor @ Azat Academia since 2023        @@
 @@   🌍 Almaty, Kazakhstan 🇰🇿 · Kazakh Native · Russian C1 · English B2  @@
