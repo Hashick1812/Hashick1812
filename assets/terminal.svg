@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="420" viewBox="0 0 400 420" role="img" aria-label="Terminal: training a model with the Force">
+  <style>
+    text{white-space:pre;font-family:'JetBrains Mono','Fira Code',Menlo,Consolas,monospace;font-size:13px}
+    .cur{animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+    .scan{animation:scan 6s linear infinite}@keyframes scan{from{transform:translateY(-40px)}to{transform:translateY(440px)}}
+    @keyframes l0{0%,4.3%{opacity:0}4.4%,94%{opacity:1}100%{opacity:0}}.l0{animation:l0 14.0s steps(1,end) infinite}@keyframes l1{0%,12.9%{opacity:0}13.0%,94%{opacity:1}100%{opacity:0}}.l1{animation:l1 14.0s steps(1,end) infinite}@keyframes l2{0%,21.4%{opacity:0}21.5%,94%{opacity:1}100%{opacity:0}}.l2{animation:l2 14.0s steps(1,end) infinite}@keyframes l3{0%,30.0%{opacity:0}30.1%,94%{opacity:1}100%{opacity:0}}.l3{animation:l3 14.0s steps(1,end) infinite}@keyframes l4{0%,38.6%{opacity:0}38.7%,94%{opacity:1}100%{opacity:0}}.l4{animation:l4 14.0s steps(1,end) infinite}@keyframes l5{0%,47.1%{opacity:0}47.2%,94%{opacity:1}100%{opacity:0}}.l5{animation:l5 14.0s steps(1,end) infinite}@keyframes l6{0%,55.7%{opacity:0}55.8%,94%{opacity:1}100%{opacity:0}}.l6{animation:l6 14.0s steps(1,end) infinite}@keyframes l7{0%,64.3%{opacity:0}64.4%,94%{opacity:1}100%{opacity:0}}.l7{animation:l7 14.0s steps(1,end) infinite}@keyframes l8{0%,72.9%{opacity:0}73.0%,94%{opacity:1}100%{opacity:0}}.l8{animation:l8 14.0s steps(1,end) infinite}
+  </style>
+  <defs>
+    <linearGradient id="sc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4bd5ee" stop-opacity="0"/><stop offset=".5" stop-color="#4bd5ee" stop-opacity=".12"/><stop offset="1" stop-color="#4bd5ee" stop-opacity="0"/></linearGradient>
+    <clipPath id="c"><rect width="400" height="420" rx="14"/></clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="400" height="420" fill="#0b0f19"/>
+    <rect width="400" height="36" fill="#1f2937"/>
+    <circle cx="22" cy="18" r="6" fill="#ef4444"/><circle cx="42" cy="18" r="6" fill="#f59e0b"/><circle cx="62" cy="18" r="6" fill="#22c55e"/>
+    <text x="200" y="23" text-anchor="middle" fill="#9ca3af" font-size="12">padawan@jedi-archives: ~</text>
+    <text class="l0" x="22" y="78" fill="#e5e7eb"><tspan fill="#4ade80">$ </tspan>whoami</text><text class="l1" x="22" y="112" fill="#ffe81f">islam — data scientist, jedi padawan</text><text class="l2" x="22" y="146" fill="#e5e7eb"><tspan fill="#4ade80">$ </tspan>cat skills.txt</text><text class="l3" x="22" y="180" fill="#7dd3fc">python  sql  sklearn  pandas  power-bi</text><text class="l4" x="22" y="214" fill="#e5e7eb"><tspan fill="#4ade80">$ </tspan>python train.py --use-the-force</text><text class="l5" x="22" y="248" fill="#a78bfa">[██████████████████] 100%</text><text class="l6" x="22" y="282" fill="#4ade80">accuracy: 0.84   f1: 0.81</text><text class="l7" x="22" y="316" fill="#e5e7eb"><tspan fill="#4ade80">$ </tspan>echo $MOTTO</text><text class="l8" x="22" y="350" fill="#ffe81f">"Do. Or do not. There is no try."</text>
+    <rect class="cur" x="22" y="372" width="9" height="15" fill="#4ade80"/>
+    <rect class="scan" x="0" y="0" width="400" height="40" fill="url(#sc)"/>
+  </g>
+  <rect x=".5" y=".5" width="399" height="419" rx="14" fill="none" stroke="#4bd5ee" stroke-opacity=".45"/>
+</svg>

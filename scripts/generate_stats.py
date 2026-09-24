@@ -1,4 +1,4 @@
-"""Render the anime-styled GitHub stats panel for the profile README.
+"""Render the Star Wars-styled GitHub stats panel for the profile README.
 
 Runs in .github/workflows/stats.yml. Public card services (github-readme-stats,
 github-readme-activity-graph) are rate-limited and often render as broken
@@ -155,26 +155,26 @@ def render(s):
     add(f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
         f'role="img" aria-label="GitHub stats">')
     add("""<defs>
-<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b1026"/>
-<stop offset=".6" stop-color="#1b1640"/><stop offset="1" stop-color="#3a1f4d"/></linearGradient>
-<radialGradient id="glow"><stop offset="0" stop-color="#ffd6e8" stop-opacity=".45"/>
-<stop offset="1" stop-color="#ffd6e8" stop-opacity="0"/></radialGradient>
-<linearGradient id="ttl" x1="0" x2="1"><stop offset="0" stop-color="#7dd3fc"/>
-<stop offset=".5" stop-color="#c4b5fd"/><stop offset="1" stop-color="#f9a8d4"/></linearGradient>
-<linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f472b6" stop-opacity=".45"/>
-<stop offset="1" stop-color="#f472b6" stop-opacity="0"/></linearGradient>
-<path id="petal" d="M0 0 C5 -7 13 -5 12 3 C10 10 3 12 0 7 C-3 12 -10 10 -12 3 C-13 -5 -5 -7 0 0Z" fill="#f9a8d4" opacity=".75"/>
-<mask id="cres"><rect width="1000" height="560" fill="#fff"/><circle cx="938" cy="58" r="30" fill="#000"/></mask>
+<radialGradient id="sky" cx=".5" cy=".4" r=".8"><stop offset="0" stop-color="#0a1022"/>
+<stop offset="1" stop-color="#000"/></radialGradient>
+<radialGradient id="station" cx=".35" cy=".35" r=".75"><stop offset="0" stop-color="#9ca3af"/>
+<stop offset="1" stop-color="#1f2937"/></radialGradient>
+<linearGradient id="ttl" x1="0" x2="1"><stop offset="0" stop-color="#ffe81f"/>
+<stop offset="1" stop-color="#fbbf24"/></linearGradient>
+<linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4bd5ee" stop-opacity=".4"/>
+<stop offset="1" stop-color="#4bd5ee" stop-opacity="0"/></linearGradient>
+<linearGradient id="streak" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/>
+<stop offset="1" stop-color="#fff" stop-opacity=".9"/></linearGradient>
 </defs>
 <style>
-text{font-family:'Segoe UI','Hiragino Sans','Noto Sans JP',Helvetica,Arial,sans-serif}
+text{font-family:'Segoe UI',Helvetica,Arial,sans-serif}
 .st{fill:#e2e8f0;animation:tw 3.5s ease-in-out infinite}
 @keyframes tw{0%,100%{opacity:.2}50%{opacity:1}}
-.pw{animation:fall linear infinite}
-@keyframes fall{0%{transform:translate(0,0) rotate(0);opacity:0}8%{opacity:1}100%{transform:translate(var(--dx),600px) rotate(300deg);opacity:.15}}
-.card{fill:#0f0c29;fill-opacity:.62;stroke:#c4b5fd;stroke-opacity:.35}
-.h{fill:#f9a8d4;font-size:17px;font-weight:700}
-.jp{fill:#c4b5fd;font-size:12px;opacity:.85}
+.hs{animation:hs linear infinite;opacity:0}
+@keyframes hs{0%{transform:translateX(0);opacity:0}10%{opacity:1}100%{transform:translateX(1300px);opacity:0}}
+.card{fill:#050a14;fill-opacity:.72;stroke:#4bd5ee;stroke-opacity:.4}
+.h{fill:#ffe81f;font-size:17px;font-weight:700;letter-spacing:1px}
+.jp{fill:#4bd5ee;font-size:12px;opacity:.85}
 .lbl{fill:#cbd5e1;font-size:14px}
 .val{fill:#f8fafc;font-size:15px;font-weight:700}
 .big{fill:url(#ttl);font-size:34px;font-weight:800}
@@ -188,17 +188,17 @@ text{font-family:'Segoe UI','Hiragino Sans','Noto Sans JP',Helvetica,Arial,sans-
     for _ in range(60):
         add(f'<circle class="st" cx="{rnd.randint(0, W)}" cy="{rnd.randint(0, H)}" '
             f'r="{rnd.choice([.7, 1, 1.3])}" style="animation-delay:{rnd.uniform(0, 4):.1f}s"/>')
-    add('<circle cx="920" cy="70" r="80" fill="url(#glow)"/>'
-        '<circle cx="920" cy="70" r="34" fill="#fde7f3" mask="url(#cres)"/>')
-    add('<path d="M0 560 L0 520 L120 480 L230 515 L360 470 L480 515 L610 485 L740 525 L870 480 '
-        'L1000 510 L1000 560Z" fill="#170f33" opacity=".9"/>')
+    # battle station
+    add('<g opacity=".55"><circle cx="930" cy="62" r="42" fill="url(#station)"/>'
+        '<path d="M888 60 H972" stroke="#111827" stroke-width="2"/>'
+        '<circle cx="912" cy="46" r="10" fill="#4b5563" stroke="#111827" stroke-width="2"/></g>')
 
     def card(x, y, w, h, title, jp):
         add(f'<rect class="card" x="{x}" y="{y}" width="{w}" height="{h}" rx="14"/>')
         add(f'<text class="h" x="{x + 20}" y="{y + 30}">{title} <tspan class="jp">{jp}</tspan></text>')
 
     # stats card
-    card(24, 24, 460, 230, "🌸 GitHub Stats", "統計")
+    card(24, 24, 460, 230, "🛰️ GitHub Stats", "// holocron")
     rows = [("⭐", "Total Stars", s["stars"]), ("📝", "Total Commits", s["commits"]),
             ("🔀", "Pull Requests", s["prs"]), ("❗", "Issues", s["issues"]),
             ("📦", "Repositories", s["repos"]), ("👥", "Followers", s["followers"])]
@@ -208,7 +208,7 @@ text{font-family:'Segoe UI','Hiragino Sans','Noto Sans JP',Helvetica,Arial,sans-
         add(f'<text class="val" x="300" y="{y}">{fmt(value)}</text>')
 
     # languages card
-    card(508, 24, 468, 230, "💻 Top Languages", "言語")
+    card(508, 24, 468, 230, "💻 Top Languages", "// droid protocols")
     langs = sorted(s["langs"].items(), key=lambda kv: -kv[1][0])[:6]
     lang_total = sum(v[0] for _, v in langs) or 1
     x = 532
@@ -225,7 +225,7 @@ text{font-family:'Segoe UI','Hiragino Sans','Noto Sans JP',Helvetica,Arial,sans-
         add('<text class="small" x="532" y="110">No language data yet</text>')
 
     # streak card
-    card(24, 272, 952, 104, "🔥 Streak", "連続")
+    card(24, 272, 952, 104, "🔥 Streak", "// hyperdrive")
     for i, (label, value) in enumerate([("Total Contributions", total),
                                          ("Current Streak", days_label(cur)),
                                          ("Longest Streak", days_label(longest))]):
@@ -234,7 +234,7 @@ text{font-family:'Segoe UI','Hiragino Sans','Noto Sans JP',Helvetica,Arial,sans-
         add(f'<text class="small" x="{cx}" y="362" text-anchor="middle">{label}</text>')
 
     # activity graph: last 30 days
-    card(24, 390, 952, 150, "📈 Activity · last 30 days", "活動")
+    card(24, 390, 952, 150, "📈 Activity · last 30 days", "// sensor log")
     last = list(s["days"].items())[-30:]
     peak = max([c for _, c in last] + [1])
     gx, gy, gw, gh = 60, 436, 890, 80
@@ -242,18 +242,18 @@ text{font-family:'Segoe UI','Hiragino Sans','Noto Sans JP',Helvetica,Arial,sans-
     if pts:
         poly = " ".join(f"{x:.1f},{y:.1f}" for x, y in pts)
         add(f'<polygon points="{gx},{gy + gh} {poly} {pts[-1][0]:.1f},{gy + gh}" fill="url(#area)"/>')
-        add(f'<polyline class="line" points="{poly}" fill="none" stroke="#f9a8d4" stroke-width="2.5" '
+        add(f'<polyline class="line" points="{poly}" fill="none" stroke="#4bd5ee" stroke-width="2.5" '
             f'stroke-linejoin="round"/>')
         for x, y in pts:
-            add(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="2.8" fill="#c4b5fd"/>')
+            add(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="2.8" fill="#ffe81f"/>')
         add(f'<text class="small" x="{gx}" y="{gy + gh + 17}">{last[0][0]}</text>')
         add(f'<text class="small" x="{gx + gw}" y="{gy + gh + 17}" text-anchor="end">{last[-1][0]}</text>')
         add(f'<text class="small" x="{gx + gw}" y="{gy - 8}" text-anchor="end">peak {peak}/day</text>')
 
-    for _ in range(16):
-        add(f'<g transform="translate({rnd.randint(20, W - 20)} -20) scale({rnd.uniform(.6, 1.2):.2f})">'
-            f'<g class="pw" style="--dx:{rnd.randint(-120, 40)}px;animation-duration:{rnd.uniform(9, 16):.1f}s;'
-            f'animation-delay:{-rnd.uniform(0, 16):.1f}s"><use href="#petal"/></g></g>')
+    for _ in range(10):
+        y = rnd.randint(10, H - 10)
+        add(f'<rect class="hs" x="-300" y="{y}" width="{rnd.randint(80, 220)}" height="1.2" fill="url(#streak)" '
+            f'style="animation-duration:{rnd.uniform(2.5, 5):.1f}s;animation-delay:{-rnd.uniform(0, 5):.1f}s"/>')
     add("</svg>")
     return "\n".join(out)
 
