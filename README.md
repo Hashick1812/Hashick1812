@@ -1,85 +1,38 @@
-<!--HERO: animated chibi drawn in assets/chibi.svg-->
-<div align="center">
-<img src="./assets/chibi.svg" width="28%" align="right" alt="Chibi cat-girl coding on a laptop"/>
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=40&duration=3500&pause=600&color=F9A8D4&center=true&vCenter=true&multiline=true&repeat=false&width=1000&height=130&lines=Konnichiwa!+I'm+Islam+%F0%9F%8C%B8;Data+Scientist+%26+anime+enjoyer+%E2%9C%A9" width="68%" alt="Konnichiwa! I'm Islam — Data Scientist & anime enjoyer"/>
-<br/><br/>
-<pre>
-  🎓 4th year Data Science &amp; Statistics @ SDU University
-  🤖 Machine Learning • NLP • Time Series • Regression
-  🏫 Teaching Assistant • Tutor @ Azat Academia • PhD Research Assistant
-  📊 Python • SQL • Scikit-learn • Power BI
-  🌸 Anime • Data • Code • Almaty, Kazakhstan 🇰🇿
-</pre>
-<img src="./assets/divider.svg" width="60%"/>
-<br/><br/>
+<p align="left">
+  <img src="https://komarev.com/ghpvc/?username=Hashick1812&label=Profile%20views&color=ffe81f&labelColor=000000&style=flat" alt="Profile views"/>
+</p>
 
-<a href="mailto:islam0402@list.ru"><img src="https://img.shields.io/badge/email-islam0402@list.ru-f472b6?style=flat-square&logo=maildotru&logoColor=white"/></a>
-<a href="https://t.me/rule_46"><img src="https://img.shields.io/badge/telegram-@rule__46-229ED9?style=flat-square&logo=telegram&logoColor=white"/></a>
-<a href="https://sdu.edu.kz"><img src="https://img.shields.io/badge/SDU_University-4th_year-c4b5fd?style=flat-square"/></a>
-<img src="https://img.shields.io/badge/status-open_to_internships-7dd3fc?style=flat-square"/>
-<img src="https://komarev.com/ghpvc/?username=Hashick1812&color=f472b6&style=flat-square&label=views"/>
-</div>
+<!--BANNER: Star Wars-style opening crawl, assets/crawl.svg-->
+<img src="./assets/crawl.svg" width="100%" alt="A long time ago in a dataset far, far away... Episode IV: A New Data Scientist"/>
+
+<h1 align="center">Hi there, I'm Islam Kuttybaev ⚔️</h1>
+
+<img align="right" hspace="20" src="./assets/terminal.svg" width="340" alt="Terminal: training a model with the Force"/>
+
+- 🎓 **4th year Data Science & Statistics** student @ [SDU University](https://sdu.edu.kz)
+- 🤖 Building **ML pipelines**: NLP, time series, regression, explainability (SHAP)
+- 🏫 **Teaching Assistant**, **PhD Research Assistant** and **Tutor** @ Azat Academia
+- 📖 Currently learning: **Deep Learning & Transformers**
+- 🛠️ Skills: **Python, SQL, Scikit-learn, Pandas, Power BI**
+- 🌍 Languages: **Kazakh** (native) · **Russian** (C1) · **English** (B2)
+- 💼 Open to **Data Science / ML internships** and research roles
+- 📫 Reach me at: [islam0402@list.ru](mailto:islam0402@list.ru) · Telegram [@rule_46](https://t.me/rule_46)
+- 📍 **Location:** Almaty, Kazakhstan 🇰🇿
 
 <br clear="right"/>
 
-<img src="./assets/divider.svg" width="100%"/>
+<p align="center"><img src="./assets/saber.svg" width="100%"/></p>
 
-<!--ABOUT ME-->
-<h2 align="center">🌸 About Me <sub><i>— 自己紹介</i></sub></h2>
+#### **The Jedi way:**
+> Your focus determines your reality. — *Qui-Gon Jinn*
 
-<table>
-<tr>
-<td width="58%" valign="top">
+#### **The data scientist's way:**
+> The greatest teacher, failure is. Every wrong model is one step closer to the right one. — *after Master Yoda*
 
-```python
-class IslamKuttybaev:
-    """Data Scientist in training. Turns messy data into decisions."""
-
-    def __init__(self):
-        self.location   = "Almaty, Kazakhstan 🇰🇿"
-        self.education  = "B.Sc. Data Science & Statistics @ SDU University"
-        self.year       = "4th year (final year) 🎓"
-        self.roles      = ["Teaching Assistant",
-                           "PhD Research Assistant",
-                           "Tutor @ Azat Academia (since 2023)"]
-        self.focus      = ["Machine Learning", "NLP",
-                           "Time Series", "Statistical Modeling"]
-        self.languages  = {"Kazakh": "Native",
-                           "Russian": "C1",
-                           "English": "B2"}
-
-    def looking_for(self):
-        return "Data Science / ML internship & research roles"
-
-    def motto(self):
-        return "Data is the new oil — I'm here to refine it."
-```
-
-</td>
-<td width="42%" valign="top">
-
-**⚡ What I do**
-
-- 🤖 Build end-to-end **ML pipelines** — from EDA and feature engineering to tuning and explainability (SHAP)
-- 🗣️ Work on **NLP for Kazakh & Russian** text
-- 📈 Forecast with **ARIMA / Holt-Winters**
-- 📊 Ship **Power BI** dashboards that stakeholders actually use
-- 🏫 Teach and mentor students in statistics & Python
-
-**🎯 Currently**
-
-- 📚 ML · Hypothesis Testing · Regression Analysis
-- 🔬 Supporting my PhD supervisor's research
-- 📖 Learning Deep Learning & Transformers
-
-</td>
-</tr>
-</table>
-
-<img src="./assets/divider.svg" width="100%"/>
+<p align="center"><img src="./assets/saber.svg" width="100%"/></p>
 
 <!--TECH STACK-->
-<h2 align="center">🛠️ Tech Stack <sub><i>— 技術スタック</i></sub></h2>
+<h2 align="center">🛠️ Jedi Arsenal <sub>// tech stack</sub></h2>
 
 <p align="center"><b>Languages</b><br/>
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
@@ -128,17 +81,17 @@ class IslamKuttybaev:
 </p>
 
 <details align="center">
-<summary><b>📌 Methods & algorithms I've applied</b></summary>
+<summary><b>🧪 Methods & algorithms I've applied</b></summary>
 <br/>
 
 `Linear / Logistic Regression` · `Random Forest` · `Gradient Boosting` · `SVM` · `Naive Bayes` · `K-Means` · `DBSCAN` · `PCA` · `TF-IDF` · `ARIMA` · `Holt-Winters` · `Hypothesis Testing` · `ANOVA` · `Cross-Validation` · `Grid Search` · `SMOTE`
 
 </details>
 
-<img src="./assets/divider.svg" width="100%"/>
+<p align="center"><img src="./assets/saber.svg" width="100%"/></p>
 
 <!--PROJECTS-->
-<h2 align="center">📁 Featured Projects <sub><i>— プロジェクト</i></sub></h2>
+<h2 align="center">🚀 Missions Completed <sub>// projects</sub></h2>
 
 <table>
 <tr>
@@ -203,10 +156,22 @@ Web-scraped Almaty housing data, exploratory analysis and a linear regression mo
 </tr>
 </table>
 
-<img src="./assets/divider.svg" width="100%"/>
+
+<details><summary>🏫 <b>Teaching &amp; research</b></summary>
+<br/>
+
+| Role | Where | What I do |
+|:---|:---|:---|
+| **Teaching Assistant** | SDU University | Support university courses for students |
+| **PhD Research Assistant** | SDU University | Support my supervisor's research with real data tasks |
+| **Tutor** | Azat Academia (since 2023) | Make Data Science accessible for students |
+
+</details>
+
+<p align="center"><img src="./assets/saber.svg" width="100%"/></p>
 
 <!--STATS-->
-<h2 align="center">📊 GitHub Stats <sub><i>— 統計</i></sub></h2>
+<h2 align="center">📡 Holocron <sub>// github stats</sub></h2>
 
 <!--STATS: rendered by .github/workflows/stats.yml (scripts/generate_stats.py) and published to the `stats` branch-->
 <p align="center">
@@ -214,7 +179,7 @@ Web-scraped Almaty housing data, exploratory analysis and a linear regression mo
 </p>
 
 <!--TROPHIES: rendered by .github/workflows/trophy.yml and published to the `trophy` branch-->
-<h3 align="center">🏆 Trophies <sub><i>— トロフィー</i></sub></h3>
+<h3 align="center">🏆 Trophies</h3>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Hashick1812/Hashick1812/trophy/trophy.svg" width="100%" alt="GitHub trophies"/>
@@ -229,35 +194,17 @@ Web-scraped Almaty housing data, exploratory analysis and a linear regression mo
   </picture>
 </p>
 
-<img src="./assets/divider.svg" width="100%"/>
-
-<!--QUOTE-->
-<h2 align="center">⛩️ Words I Code By <sub><i>— 名言</i></sub></h2>
-
-<p align="center">
-  <i>❝ If you don't take risks, you can't create a future. ❞</i><br/>
-  <sub>— Monkey D. Luffy, <b>One Piece</b></sub>
-</p>
-
-<p align="center">
-  <i>❝ Hard work is worthless for those that don't believe in themselves. ❞</i><br/>
-  <sub>— Naruto Uzumaki, <b>Naruto</b></sub>
-</p>
-
-<img src="./assets/divider.svg" width="100%"/>
+<p align="center"><img src="./assets/saber.svg" width="100%"/></p>
 
 <!--CONNECT-->
-<h2 align="center">🤝 Let's Connect <sub><i>— よろしくお願いします</i></sub></h2>
-
 <p align="center">
-  I'm open to <b>internships and research opportunities</b> in Data Science and Applied ML.<br/>
-  The fastest way to reach me is Telegram or email.
+  <b>Thank you for visiting my profile! Open a comm channel if you'd like to work together. 🛰️</b>
 </p>
 
 <p align="center">
-  <a href="https://t.me/rule_46"><img src="https://img.shields.io/badge/Telegram-@rule__46-229ED9?style=for-the-badge&logo=telegram&logoColor=white&labelColor=1a1b27"/></a>
-  <a href="mailto:islam0402@list.ru"><img src="https://img.shields.io/badge/Email-islam0402@list.ru-f472b6?style=for-the-badge&logo=maildotru&logoColor=white&labelColor=1a1b27"/></a>
+  <a href="https://t.me/rule_46"><img src="https://img.shields.io/badge/Telegram-@rule__46-229ED9?style=for-the-badge&logo=telegram&logoColor=white&labelColor=000000"/></a>
+  <a href="mailto:islam0402@list.ru"><img src="https://img.shields.io/badge/Email-islam0402@list.ru-ffe81f?style=for-the-badge&logo=maildotru&logoColor=black&labelColor=000000"/></a>
 </p>
 
 <!--FOOTER-->
-<img src="./assets/footer.svg" width="100%"/>
+<img src="./assets/footer.svg" width="100%" alt="May the Force be with you"/>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="30" viewBox="0 0 1000 30" role="img" aria-label="lightsaber divider">
+  <defs>
+    <filter id="g" x="-10%" y="-200%" width="120%" height="500%"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+  <style>
+    .b{animation:ig 1.2s ease-out both}.r{transform-origin:520px 15px}.l{transform-origin:480px 15px}
+    @keyframes ig{from{transform:scaleX(0)}}
+    .hum{animation:hum .12s ease-in-out infinite alternate}@keyframes hum{to{opacity:.8}}
+  </style>
+  <g class="b l hum"><rect x="40" y="12" width="440" height="6" rx="3" fill="#38bdf8" filter="url(#g)"/><rect x="40" y="13" width="440" height="4" rx="2" fill="#e0f2fe"/></g>
+  <g class="b r hum"><rect x="520" y="12" width="440" height="6" rx="3" fill="#ef4444" filter="url(#g)"/><rect x="520" y="13" width="440" height="4" rx="2" fill="#fee2e2"/></g>
+  <rect x="478" y="9" width="44" height="12" rx="2" fill="#9ca3af"/>
+  <rect x="490" y="9" width="4" height="12" fill="#374151"/><rect x="506" y="9" width="4" height="12" fill="#374151"/>
+  <rect x="496" y="7" width="8" height="16" rx="1" fill="#1f2937"/>
+</svg>

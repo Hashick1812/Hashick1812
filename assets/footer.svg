@@ -1,15 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140" role="img" aria-label="ありがとう! Thanks for visiting">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a1f4d" stop-opacity="0"/><stop offset=".45" stop-color="#3a1f4d"/><stop offset="1" stop-color="#0b1026"/></linearGradient>
-    <linearGradient id="t" x1="0" x2="1"><stop offset="0" stop-color="#7dd3fc"/><stop offset=".5" stop-color="#c4b5fd"/><stop offset="1" stop-color="#f9a8d4"/></linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120" role="img" aria-label="May the Force be with you">
   <style>
-    text{font-family:'Segoe UI','Hiragino Sans','Noto Sans JP',Helvetica,Arial,sans-serif}
-    .w{animation:wave 6s ease-in-out infinite alternate}
-    @keyframes wave{to{transform:translateX(-60px)}}
-    .p{animation:pulse 3s ease-in-out infinite}
-    @keyframes pulse{50%{opacity:.6}}
+    text{font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif}
+    .p{animation:p 3s ease-in-out infinite}@keyframes p{50%{opacity:.55}}
+    .tw{animation:tw 2.5s ease-in-out infinite}@keyframes tw{50%{opacity:.2}}
   </style>
-  <path class="w" d="M-60 40 Q90 0 240 40 T540 40 T840 40 T1140 40 T1440 40 V140 H-60Z" fill="url(#g)"/>
-  <text class="p" x="600" y="100" text-anchor="middle" font-size="28" font-weight="800" fill="url(#t)" letter-spacing="3">ありがとう! · Thanks for visiting</text>
+  <rect width="1200" height="120" rx="12" fill="#000"/>
+  <g fill="#fff"><circle class="tw" cx="80" cy="30" r="1.4"/><circle cx="210" cy="90" r="1"/><circle class="tw" cx="400" cy="20" r="1.2"/><circle cx="760" cy="95" r="1"/><circle class="tw" cx="980" cy="28" r="1.4"/><circle cx="1120" cy="80" r="1"/><circle cx="560" cy="100" r=".8"/><circle cx="300" cy="55" r=".8"/><circle cx="880" cy="60" r=".8"/></g>
+  <text class="p" x="600" y="72" text-anchor="middle" font-size="34" font-weight="800" letter-spacing="6" fill="#ffe81f">MAY THE FORCE BE WITH YOU</text>
 </svg>
