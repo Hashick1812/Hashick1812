@@ -5,7 +5,7 @@
 
 <!--TYPING SVG-->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=17&pause=1000&color=F9A8D4&center=true&vCenter=true&width=720&lines=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF!+I'm+Islam+%F0%9F%8C%B8;Data+Science+%26+Statistics+%40+SDU+University;ML+pipelines+%7C+NLP+%7C+Time+Series+%7C+Regression;Teaching+Assistant+%26+Tutor+%40+Azat+Academia;Open+to+Data+Science+%2F+ML+internships+%F0%9F%9A%80" alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=17&pause=1000&color=F9A8D4&center=true&vCenter=true&width=720&lines=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF!+I'm+Islam+%F0%9F%8C%B8;4th+year+Data+Science+%26+Statistics+%40+SDU+University;ML+pipelines+%7C+NLP+%7C+Time+Series+%7C+Regression;Teaching+Assistant+%26+Tutor+%40+Azat+Academia;Open+to+Data+Science+%2F+ML+internships+%F0%9F%9A%80" alt="Typing SVG"/>
 </p>
 
 <!--BADGES-->
@@ -15,7 +15,7 @@
   <a href="https://github.com/Hashick1812"><img src="https://img.shields.io/badge/GitHub-Hashick1812-c4b5fd?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27"/></a>
   <br/>
   <img src="https://img.shields.io/badge/📍_Almaty,_Kazakhstan-7dd3fc?style=flat-square&labelColor=1a1b27"/>
-  <a href="https://sdu.edu.kz"><img src="https://img.shields.io/badge/🎓_SDU_University-Data_Science_%26_Statistics-c4b5fd?style=flat-square&labelColor=1a1b27"/></a>
+  <a href="https://sdu.edu.kz"><img src="https://img.shields.io/badge/🎓_SDU_University-4th_Year_·_Data_Science-c4b5fd?style=flat-square&labelColor=1a1b27"/></a>
   <img src="https://img.shields.io/badge/💼_Status-Open_to_Internships-f9a8d4?style=flat-square&labelColor=1a1b27"/>
   <img src="https://komarev.com/ghpvc/?username=Hashick1812&color=f472b6&style=flat-square&label=Profile+Views"/>
 </p>
@@ -36,6 +36,7 @@ class IslamKuttybaev:
     def __init__(self):
         self.location   = "Almaty, Kazakhstan 🇰🇿"
         self.education  = "B.Sc. Data Science & Statistics @ SDU University"
+        self.year       = "4th year (final year) 🎓"
         self.roles      = ["Teaching Assistant",
                            "PhD Research Assistant",
                            "Tutor @ Azat Academia (since 2023)"]
@@ -137,17 +138,68 @@ class IslamKuttybaev:
 <!--PROJECTS-->
 <h2 align="center">📁 Featured Projects <sub><i>— プロジェクト</i></sub></h2>
 
-<div align="center">
+<table>
+<tr>
+<td width="50%" valign="top">
 
-| | Project | Stack | Key result |
-|:---:|:---|:---|:---|
-| 🎓 | **Student Performance Prediction** | Python · Scikit-learn · Power BI | **84% accuracy**, SHAP explainability, SMOTE for class imbalance |
-| 🛒 | **E-commerce Sales Analytics** | SQL · Power BI · Excel | **50K+ records**, identified a 17% seasonal sales spike |
-| 🗣️ | **Kazakh-Russian Sentiment Analysis** | Python · NLTK · SVM | **2,000 reviews**, F1 = 0.81 |
-| 🌡️ | **Almaty Weather Forecasting** | Python · Statsmodels | ARIMA + Holt-Winters, top grade in course |
-| 🏠 | **Almaty Housing Market EDA** | Python · Pandas · Seaborn | Web-scraped dataset, price regression model |
+### 🎓 Student Performance Prediction
+Classification model that predicts student performance from academic data.
 
-</div>
+- ✅ **84% accuracy**; SMOTE fixes class imbalance
+- 🔍 SHAP for model explainability
+- 📊 Insights visualised in Power BI
+
+`Python` `Scikit-learn` `SHAP` `Power BI`
+
+</td>
+<td width="50%" valign="top">
+
+### 🗣️ Kazakh–Russian Sentiment Analysis
+Sentiment classification of Kazakh and Russian reviews.
+
+- 📝 **2,000 reviews**
+- ⚙️ TF-IDF + SVM, **F1 = 0.81**
+
+`Python` `NLTK` `Scikit-learn` `TF-IDF`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🛒 E-commerce Sales Analytics
+Sales analysis of an online store, from SQL queries to business insights.
+
+- 🗃️ **50K+ records** analysed with SQL
+- 📈 Found a **17% seasonal sales spike**
+- 📊 Power BI dashboard
+
+`SQL` `Power BI` `Excel`
+
+</td>
+<td width="50%" valign="top">
+
+### 🌡️ Almaty Weather Forecasting
+Time-series forecasting of Almaty temperatures.
+
+- 📉 ARIMA and Holt-Winters models
+- 🏅 Top grade in the course
+
+`Python` `Statsmodels` `Pandas`
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+
+### 🏠 Almaty Housing Market EDA
+Web-scraped Almaty housing data, exploratory analysis and a linear regression model for prices.
+
+`Python` `BeautifulSoup` `Pandas` `Seaborn` `Regression`
+
+</td>
+</tr>
+</table>
 
 <img src="./assets/divider.svg" width="100%"/>
 
