@@ -1,0 +1,31 @@
+name: Generate Trophies
+
+# The public github-profile-trophy.vercel.app instance is overloaded and often
+# returns nothing, so the trophy card is rendered here and served from the
+# `trophy` branch instead.
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ryo-ma/github-profile-trophy@e3c89df995e92e67cdd4b2acaab9d974583dc1f7
+        with:
+          username: Hashick1812
+          output_path: dist/trophy.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          theme: tokyonight
+      - uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: trophy
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
