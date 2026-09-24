@@ -206,13 +206,9 @@ Web-scraped Almaty housing data, exploratory analysis and a linear regression mo
 <!--STATS-->
 <h2 align="center">📊 GitHub Stats <sub><i>— 統計</i></sub></h2>
 
+<!--STATS: rendered by .github/workflows/stats.yml (scripts/generate_stats.py) and published to the `stats` branch-->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Hashick1812&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=f9a8d4&icon_color=c4b5fd&text_color=e2e8f0&ring_color=f472b6&include_all_commits=true&count_private=true&rank_icon=github" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hashick1812&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=f9a8d4&text_color=e2e8f0&langs_count=6" height="170"/>
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=Hashick1812&theme=tokyonight&hide_border=true&background=1a1b27&ring=f472b6&fire=f9a8d4&currStreakLabel=f9a8d4&sideLabels=c4b5fd&currStreakNum=e2e8f0&sideNums=e2e8f0&dates=94a3b8" height="170"/>
+  <img src="https://raw.githubusercontent.com/Hashick1812/Hashick1812/stats/stats.svg" width="100%" alt="GitHub stats, languages, streak and activity"/>
 </p>
 
 <!--TROPHIES: rendered by .github/workflows/trophy.yml and published to the `trophy` branch-->
@@ -220,13 +216,6 @@ Web-scraped Almaty housing data, exploratory analysis and a linear regression mo
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Hashick1812/Hashick1812/trophy/trophy.svg" width="100%" alt="GitHub trophies"/>
-</p>
-
-<!--ACTIVITY GRAPH-->
-<h3 align="center">📈 Contribution Activity</h3>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Hashick1812&bg_color=1a1b27&color=f9a8d4&line=c4b5fd&point=f472b6&area=true&area_color=c4b5fd&hide_border=true" width="100%"/>
 </p>
 
 <!--SNAKE: rendered by .github/workflows/snake.yml and published to the `snake` branch-->
@@ -269,4 +258,4 @@ Web-scraped Almaty housing data, exploratory analysis and a linear regression mo
 </p>
 
 <!--FOOTER-->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:3a1f4d,50:1b1640,100:0b1026&height=120&section=footer&text=%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86%21&fontSize=28&fontColor=f9a8d4&fontAlignY=70" width="100%"/>
+<img src="./assets/footer.svg" width="100%"/>
