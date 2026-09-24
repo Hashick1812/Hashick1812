@@ -1,24 +1,26 @@
-<!--HEADER BANNER (self-hosted animated SVG: assets/banner.svg)-->
-<p align="center">
-  <img src="./assets/banner.svg" width="100%" alt="Islam Kuttybaev — Data Scientist · ML Engineer"/>
-</p>
+<!--HERO: animated chibi drawn in assets/chibi.svg-->
+<div align="center">
+<img src="./assets/chibi.svg" width="28%" align="right" alt="Chibi cat-girl coding on a laptop"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=40&duration=3500&pause=600&color=F9A8D4&center=true&vCenter=true&multiline=true&repeat=false&width=1000&height=130&lines=Konnichiwa!+I'm+Islam+%F0%9F%8C%B8;Data+Scientist+%26+anime+enjoyer+%E2%9C%A9" width="68%" alt="Konnichiwa! I'm Islam — Data Scientist & anime enjoyer"/>
+<br/><br/>
+<pre>
+  🎓 4th year Data Science &amp; Statistics @ SDU University
+  🤖 Machine Learning • NLP • Time Series • Regression
+  🏫 Teaching Assistant • Tutor @ Azat Academia • PhD Research Assistant
+  📊 Python • SQL • Scikit-learn • Power BI
+  🌸 Anime • Data • Code • Almaty, Kazakhstan 🇰🇿
+</pre>
+<img src="./assets/divider.svg" width="60%"/>
+<br/><br/>
 
-<!--TYPING SVG-->
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=17&pause=1000&color=F9A8D4&center=true&vCenter=true&width=720&lines=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF!+I'm+Islam+%F0%9F%8C%B8;4th+year+Data+Science+%26+Statistics+%40+SDU+University;ML+pipelines+%7C+NLP+%7C+Time+Series+%7C+Regression;Teaching+Assistant+%26+Tutor+%40+Azat+Academia;Open+to+Data+Science+%2F+ML+internships+%F0%9F%9A%80" alt="Typing SVG"/>
-</p>
+<a href="mailto:islam0402@list.ru"><img src="https://img.shields.io/badge/email-islam0402@list.ru-f472b6?style=flat-square&logo=maildotru&logoColor=white"/></a>
+<a href="https://t.me/rule_46"><img src="https://img.shields.io/badge/telegram-@rule__46-229ED9?style=flat-square&logo=telegram&logoColor=white"/></a>
+<a href="https://sdu.edu.kz"><img src="https://img.shields.io/badge/SDU_University-4th_year-c4b5fd?style=flat-square"/></a>
+<img src="https://img.shields.io/badge/status-open_to_internships-7dd3fc?style=flat-square"/>
+<img src="https://komarev.com/ghpvc/?username=Hashick1812&color=f472b6&style=flat-square&label=views"/>
+</div>
 
-<!--BADGES-->
-<p align="center">
-  <a href="mailto:islam0402@list.ru"><img src="https://img.shields.io/badge/Email-islam0402@list.ru-f472b6?style=for-the-badge&logo=maildotru&logoColor=white&labelColor=1a1b27"/></a>
-  <a href="https://t.me/rule_46"><img src="https://img.shields.io/badge/Telegram-@rule__46-229ED9?style=for-the-badge&logo=telegram&logoColor=white&labelColor=1a1b27"/></a>
-  <a href="https://github.com/Hashick1812"><img src="https://img.shields.io/badge/GitHub-Hashick1812-c4b5fd?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27"/></a>
-  <br/>
-  <img src="https://img.shields.io/badge/📍_Almaty,_Kazakhstan-7dd3fc?style=flat-square&labelColor=1a1b27"/>
-  <a href="https://sdu.edu.kz"><img src="https://img.shields.io/badge/🎓_SDU_University-4th_Year_·_Data_Science-c4b5fd?style=flat-square&labelColor=1a1b27"/></a>
-  <img src="https://img.shields.io/badge/💼_Status-Open_to_Internships-f9a8d4?style=flat-square&labelColor=1a1b27"/>
-  <img src="https://komarev.com/ghpvc/?username=Hashick1812&color=f472b6&style=flat-square&label=Profile+Views"/>
-</p>
+<br clear="right"/>
 
 <img src="./assets/divider.svg" width="100%"/>
 
