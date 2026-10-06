@@ -174,6 +174,17 @@ Web-scraped Almaty housing data, exploratory analysis and a linear regression mo
 
 <p align="center"><img src="./assets/saber.svg" width="100%"/></p>
 
+<!--CERTIFICATIONS-->
+<h2 align="center">🎖️ Jedi Certifications <sub>// verified credentials</sub></h2>
+
+<p align="center">
+  <a href="https://coursera.org/share/d316159499c44181e397ee2eb21e4387"><img src="https://img.shields.io/badge/Coursera-View_Certificate_→-0056D2?style=for-the-badge&logo=coursera&logoColor=white&labelColor=000000" alt="Coursera certificate"/></a>
+  &nbsp;
+  <a href="https://coursera.org/share/c0773776b1257278488e7081cb31a256"><img src="https://img.shields.io/badge/Coursera-View_Certificate_→-0056D2?style=for-the-badge&logo=coursera&logoColor=white&labelColor=000000" alt="Coursera certificate"/></a>
+</p>
+
+<p align="center"><img src="./assets/saber.svg" width="100%"/></p>
+
 <!--STATS-->
 <h2 align="center">📡 Holocron <sub>// github stats</sub></h2>
 
