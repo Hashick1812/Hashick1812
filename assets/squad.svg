@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="80" viewBox="0 0 1200 80" role="img" aria-label="A squad of clone troopers marching">
+  <defs><g id="trooper">
+      <rect x="-9" y="-58" width="18" height="18" rx="8" fill="#f1f5f9"/>
+      <rect x="-1.5" y="-58" width="3" height="10" fill="#2563eb"/>
+      <path d="M-7 -50 L7 -50 L6 -46 L2 -45 L1.5 -41 L-1.5 -41 L-2 -45 L-6 -46Z" fill="#0b1120"/>
+      <rect x="-10" y="-39" width="20" height="24" rx="4" fill="#f1f5f9"/>
+      <rect x="-10" y="-30" width="20" height="3" fill="#2563eb"/>
+      <rect x="-10" y="-17" width="20" height="4" fill="#334155"/>
+      <g class="armF"><rect x="-4" y="-38" width="7" height="20" rx="3" fill="#e2e8f0"/><rect x="-2" y="-22" width="22" height="5" rx="1" fill="#111827"/></g>
+      <g class="legA"><rect x="-8" y="-14" width="7" height="22" rx="3" fill="#e2e8f0"/><rect x="-9" y="6" width="9" height="4" rx="1" fill="#cbd5e1"/></g>
+      <g class="legB"><rect x="1" y="-14" width="7" height="22" rx="3" fill="#e2e8f0"/><rect x="1" y="6" width="9" height="4" rx="1" fill="#cbd5e1"/></g>
+    </g></defs>
+  <style>
+    .march{animation:march 22s linear infinite}
+    @keyframes march{from{transform:translateX(0)}to{transform:translateX(1560px)}}
+    .legA{animation:legA .6s ease-in-out infinite alternate;transform-origin:-4px -14px}
+    .legB{animation:legA .6s ease-in-out infinite alternate-reverse;transform-origin:4px -14px}
+    @keyframes legA{from{transform:rotate(-18deg)}to{transform:rotate(18deg)}}
+    .armF{animation:arm .6s ease-in-out infinite alternate;transform-origin:0 -36px}
+    @keyframes arm{to{transform:rotate(4deg)}}
+  </style>
+  <rect x="0" y="72" width="1200" height="2" fill="#4bd5ee" opacity=".35"/>
+  <g class="march"><g transform="translate(-60 62)"><use href="#trooper"/></g><g transform="translate(-108 62)"><use href="#trooper"/></g><g transform="translate(-156 62)"><use href="#trooper"/></g><g transform="translate(-204 62)"><use href="#trooper"/></g><g transform="translate(-252 62)"><use href="#trooper"/></g><g transform="translate(-300 62)"><use href="#trooper"/></g></g>
+</svg>
