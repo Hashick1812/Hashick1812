@@ -2,10 +2,11 @@
   <img src="https://komarev.com/ghpvc/?username=Hashick1812&label=Profile%20views&color=ffe81f&labelColor=000000&style=flat" alt="Profile views"/>
 </p>
 
-<!--BANNER: Star Wars-style opening crawl, assets/crawl.svg-->
-<img src="./assets/crawl.svg" width="100%" alt="A long time ago in a dataset far, far away... Episode IV: A New Data Scientist"/>
+<!--BANNER: Star Destroyer, TIE fighters and an X-wing, assets/banner.svg-->
+<img src="./assets/banner.svg" width="100%" alt="Islam Kuttybaev — Data Scientist · ML Engineer"/>
+<img src="./assets/squad.svg" width="100%" alt="Clone troopers marching"/>
 
-<h1 align="center">Hi there, I'm Islam Kuttybaev ⚔️</h1>
+<h1 align="center">Hi there, I'm Islam Kuttybaev <img height="48" src="./assets/clone.svg" alt="Clone trooper"/></h1>
 
 <img align="right" hspace="20" src="./assets/terminal.svg" width="340" alt="Terminal: training a model with the Force"/>
 
@@ -22,6 +23,9 @@
 <br clear="right"/>
 
 <p align="center"><img src="./assets/saber.svg" width="100%"/></p>
+
+<!--OPENING CRAWL: assets/crawl.svg-->
+<img src="./assets/crawl.svg" width="100%" alt="A long time ago in a dataset far, far away... Episode IV: A New Data Scientist"/>
 
 #### **The Jedi way:**
 > Your focus determines your reality. — *Qui-Gon Jinn*
