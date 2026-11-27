@@ -1,4 +1,4 @@
-"""Render the Star Wars-styled GitHub stats panel for the profile README.
+"""Render the minimal GitHub stats panel for the profile README.
 
 Runs in .github/workflows/stats.yml. Public card services (github-readme-stats,
 github-readme-activity-graph) are rate-limited and often render as broken
@@ -146,114 +146,73 @@ def days_label(n):
 
 
 def render(s):
-    W, H = 1000, 560
-    rnd = random.Random(42)
+    W, H = 1000, 420
     total, cur, longest = streaks(s["days"])
     out = []
     add = out.append
+    mono = "'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace"
 
     add(f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
         f'role="img" aria-label="GitHub stats">')
-    add("""<defs>
-<radialGradient id="sky" cx=".5" cy=".4" r=".8"><stop offset="0" stop-color="#0a1022"/>
-<stop offset="1" stop-color="#000"/></radialGradient>
-<radialGradient id="station" cx=".35" cy=".35" r=".75"><stop offset="0" stop-color="#9ca3af"/>
-<stop offset="1" stop-color="#1f2937"/></radialGradient>
-<linearGradient id="ttl" x1="0" x2="1"><stop offset="0" stop-color="#ffe81f"/>
-<stop offset="1" stop-color="#fbbf24"/></linearGradient>
-<linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4bd5ee" stop-opacity=".4"/>
-<stop offset="1" stop-color="#4bd5ee" stop-opacity="0"/></linearGradient>
-<linearGradient id="streak" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/>
-<stop offset="1" stop-color="#fff" stop-opacity=".9"/></linearGradient>
-</defs>
-<style>
-text{font-family:'Segoe UI',Helvetica,Arial,sans-serif}
-.st{fill:#e2e8f0;animation:tw 3.5s ease-in-out infinite}
-@keyframes tw{0%,100%{opacity:.2}50%{opacity:1}}
-.hs{animation:hs linear infinite;opacity:0}
-@keyframes hs{0%{transform:translateX(0);opacity:0}10%{opacity:1}100%{transform:translateX(1300px);opacity:0}}
-.card{fill:#050a14;fill-opacity:.72;stroke:#4bd5ee;stroke-opacity:.4}
-.h{fill:#ffe81f;font-size:17px;font-weight:700;letter-spacing:1px}
-.jp{fill:#4bd5ee;font-size:12px;opacity:.85}
-.lbl{fill:#cbd5e1;font-size:14px}
-.val{fill:#f8fafc;font-size:15px;font-weight:700}
-.big{fill:url(#ttl);font-size:34px;font-weight:800}
-.small{fill:#94a3b8;font-size:12px}
-.line{stroke-dasharray:3000;stroke-dashoffset:3000;animation:draw 3s ease-out forwards}
-@keyframes draw{to{stroke-dashoffset:0}}
-.bar{animation:grow 1.4s ease-out both;transform-box:fill-box;transform-origin:left}
-@keyframes grow{from{transform:scaleX(0)}}
+    add(f"""<style>
+text{{font-family:{mono}}}
+.k{{fill:#8b949e;font-size:11px;letter-spacing:1.5px}}
+.v{{fill:#f0f6fc;font-size:30px;font-weight:700}}
+.h{{fill:#22d3ee;font-size:12px;letter-spacing:2px}}
+.t{{fill:#c9d1d9;font-size:13px}}
+.m{{fill:#6e7681;font-size:11px}}
 </style>""")
-    add(f'<rect width="{W}" height="{H}" rx="18" fill="url(#sky)"/>')
-    for _ in range(60):
-        add(f'<circle class="st" cx="{rnd.randint(0, W)}" cy="{rnd.randint(0, H)}" '
-            f'r="{rnd.choice([.7, 1, 1.3])}" style="animation-delay:{rnd.uniform(0, 4):.1f}s"/>')
-    # battle station
-    add('<g opacity=".55"><circle cx="930" cy="62" r="42" fill="url(#station)"/>'
-        '<path d="M888 60 H972" stroke="#111827" stroke-width="2"/>'
-        '<circle cx="912" cy="46" r="10" fill="#4b5563" stroke="#111827" stroke-width="2"/></g>')
+    add(f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="10" fill="#0d1117" stroke="#30363d"/>')
 
-    def card(x, y, w, h, title, jp):
-        add(f'<rect class="card" x="{x}" y="{y}" width="{w}" height="{h}" rx="14"/>')
-        add(f'<text class="h" x="{x + 20}" y="{y + 30}">{title} <tspan class="jp">{jp}</tspan></text>')
+    # KPI row
+    kpis = [("COMMITS", fmt(s["commits"])), ("CONTRIBUTIONS", fmt(total)),
+            ("REPOSITORIES", fmt(s["repos"])), ("PULL REQUESTS", fmt(s["prs"])),
+            ("CURRENT STREAK", days_label(cur)), ("LONGEST STREAK", days_label(longest))]
+    cw = (W - 48) / len(kpis)
+    for i, (k, v) in enumerate(kpis):
+        x = 24 + i * cw
+        if i:
+            add(f'<line x1="{x:.1f}" y1="30" x2="{x:.1f}" y2="98" stroke="#21262d"/>')
+        add(f'<text class="k" x="{x + 14:.1f}" y="46">{k}</text>')
+        size = 30 if len(v) < 8 else 22
+        add(f'<text class="v" x="{x + 14:.1f}" y="86" style="font-size:{size}px">{v}</text>')
+    add(f'<line x1="24" y1="124" x2="{W - 24}" y2="124" stroke="#21262d"/>')
 
-    # stats card
-    card(24, 24, 460, 230, "🛰️ GitHub Stats", "// holocron")
-    rows = [("⭐", "Total Stars", s["stars"]), ("📝", "Total Commits", s["commits"]),
-            ("🔀", "Pull Requests", s["prs"]), ("❗", "Issues", s["issues"]),
-            ("📦", "Repositories", s["repos"]), ("👥", "Followers", s["followers"])]
-    for i, (icon, label, value) in enumerate(rows):
-        y = 78 + i * 29
-        add(f'<text class="lbl" x="48" y="{y}">{icon}  {label}</text>')
-        add(f'<text class="val" x="300" y="{y}">{fmt(value)}</text>')
-
-    # languages card
-    card(508, 24, 468, 230, "💻 Top Languages", "// droid protocols")
-    langs = sorted(s["langs"].items(), key=lambda kv: -kv[1][0])[:6]
+    # languages
+    add('<text class="h" x="38" y="156">TOP LANGUAGES</text>')
+    langs = sorted(s["langs"].items(), key=lambda kv: -kv[1][0])[:5]
     lang_total = sum(v[0] for _, v in langs) or 1
-    x = 532
-    for name, (size, color) in langs:
-        w = 420 * size / lang_total
-        add(f'<rect class="bar" x="{x:.1f}" y="62" width="{max(w, 2):.1f}" height="10" fill="{color}"/>')
-        x += w
-    for i, (name, (size, color)) in enumerate(langs):
-        cx, cy = 540 + (i % 2) * 215, 104 + (i // 2) * 44
-        add(f'<circle cx="{cx}" cy="{cy - 5}" r="6" fill="{color}"/>')
-        add(f'<text class="lbl" x="{cx + 14}" y="{cy}">{escape(name)}</text>')
-        add(f'<text class="small" x="{cx + 14}" y="{cy + 17}">{100 * size / lang_total:.1f}%</text>')
+    for i, (name, (size, _)) in enumerate(langs):
+        y = 190 + i * 40
+        pct = 100 * size / lang_total
+        add(f'<text class="t" x="38" y="{y}">{escape(name)}</text>')
+        add(f'<text class="m" x="440" y="{y}" text-anchor="end">{pct:.1f}%</text>')
+        add(f'<rect x="38" y="{y + 9}" width="402" height="4" rx="2" fill="#21262d"/>')
+        add(f'<rect x="38" y="{y + 9}" width="{max(402 * pct / 100, 3):.1f}" height="4" rx="2" '
+            'fill="#22d3ee"/>')
     if not langs:
-        add('<text class="small" x="532" y="110">No language data yet</text>')
+        add('<text class="m" x="38" y="190">No language data yet</text>')
 
-    # streak card
-    card(24, 272, 952, 104, "🔥 Streak", "// hyperdrive")
-    for i, (label, value) in enumerate([("Total Contributions", total),
-                                         ("Current Streak", days_label(cur)),
-                                         ("Longest Streak", days_label(longest))]):
-        cx = 180 + i * 320
-        add(f'<text class="big" x="{cx}" y="342" text-anchor="middle">{value}</text>')
-        add(f'<text class="small" x="{cx}" y="362" text-anchor="middle">{label}</text>')
+    add(f'<line x1="490" y1="146" x2="490" y2="{H - 30}" stroke="#21262d"/>')
 
-    # activity graph: last 30 days
-    card(24, 390, 952, 150, "📈 Activity · last 30 days", "// sensor log")
+    # activity: last 30 days as columns
+    add('<text class="h" x="520" y="156">ACTIVITY · LAST 30 DAYS</text>')
     last = list(s["days"].items())[-30:]
     peak = max([c for _, c in last] + [1])
-    gx, gy, gw, gh = 60, 436, 890, 80
-    pts = [(gx + i * gw / max(len(last) - 1, 1), gy + gh - gh * c / peak) for i, (_, c) in enumerate(last)]
-    if pts:
-        poly = " ".join(f"{x:.1f},{y:.1f}" for x, y in pts)
-        add(f'<polygon points="{gx},{gy + gh} {poly} {pts[-1][0]:.1f},{gy + gh}" fill="url(#area)"/>')
-        add(f'<polyline class="line" points="{poly}" fill="none" stroke="#4bd5ee" stroke-width="2.5" '
-            f'stroke-linejoin="round"/>')
-        for x, y in pts:
-            add(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="2.8" fill="#ffe81f"/>')
-        add(f'<text class="small" x="{gx}" y="{gy + gh + 17}">{last[0][0]}</text>')
-        add(f'<text class="small" x="{gx + gw}" y="{gy + gh + 17}" text-anchor="end">{last[-1][0]}</text>')
-        add(f'<text class="small" x="{gx + gw}" y="{gy - 8}" text-anchor="end">peak {peak}/day</text>')
-
-    for _ in range(10):
-        y = rnd.randint(10, H - 10)
-        add(f'<rect class="hs" x="-300" y="{y}" width="{rnd.randint(80, 220)}" height="1.2" fill="url(#streak)" '
-            f'style="animation-duration:{rnd.uniform(2.5, 5):.1f}s;animation-delay:{-rnd.uniform(0, 5):.1f}s"/>')
+    gx, gy, gw, gh = 520, 180, 440, 176
+    bw = gw / max(len(last), 1)
+    for i, (_, c) in enumerate(last):
+        h = gh * c / peak
+        x = gx + i * bw
+        if c:
+            add(f'<rect x="{x + 1.5:.1f}" y="{gy + gh - h:.1f}" width="{bw - 3:.1f}" height="{h:.1f}" '
+                'rx="1.5" fill="#22d3ee"/>')
+        else:
+            add(f'<rect x="{x + 1.5:.1f}" y="{gy + gh - 2}" width="{bw - 3:.1f}" height="2" fill="#21262d"/>')
+    if last:
+        add(f'<text class="m" x="{gx}" y="{gy + gh + 22}">{last[0][0]}</text>')
+        add(f'<text class="m" x="{gx + gw}" y="{gy + gh + 22}" text-anchor="end">{last[-1][0]}</text>')
+        add(f'<text class="m" x="{gx + gw}" y="{gy - 6}" text-anchor="end">max {peak}/day</text>')
     add("</svg>")
     return "\n".join(out)
 
