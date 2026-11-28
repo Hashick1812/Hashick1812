@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img" aria-label="GitHub stats">
+<style>
+text{font-family:'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace}
+.k{fill:#8b949e;font-size:11px;letter-spacing:1.5px}
+.v{fill:#f0f6fc;font-size:30px;font-weight:700}
+.h{fill:#22d3ee;font-size:12px;letter-spacing:2px}
+.t{fill:#c9d1d9;font-size:13px}
+.m{fill:#6e7681;font-size:11px}
+</style>
+<rect x=".5" y=".5" width="999" height="419" rx="10" fill="#0d1117" stroke="#30363d"/>
+<text class="k" x="38.0" y="46">COMMITS</text>
+<text class="v" x="38.0" y="86" style="font-size:30px">64</text>
+<line x1="182.7" y1="30" x2="182.7" y2="98" stroke="#21262d"/>
+<text class="k" x="196.7" y="46">CONTRIBUTIONS</text>
+<text class="v" x="196.7" y="86" style="font-size:30px">84</text>
+<line x1="341.3" y1="30" x2="341.3" y2="98" stroke="#21262d"/>
+<text class="k" x="355.3" y="46">REPOSITORIES</text>
+<text class="v" x="355.3" y="86" style="font-size:30px">9</text>
+<line x1="500.0" y1="30" x2="500.0" y2="98" stroke="#21262d"/>
+<text class="k" x="514.0" y="46">PULL REQUESTS</text>
+<text class="v" x="514.0" y="86" style="font-size:30px">10</text>
+<line x1="658.7" y1="30" x2="658.7" y2="98" stroke="#21262d"/>
+<text class="k" x="672.7" y="46">CURRENT STREAK</text>
+<text class="v" x="672.7" y="86" style="font-size:30px">1 day</text>
+<line x1="817.3" y1="30" x2="817.3" y2="98" stroke="#21262d"/>
+<text class="k" x="831.3" y="46">LONGEST STREAK</text>
+<text class="v" x="831.3" y="86" style="font-size:30px">2 days</text>
+<line x1="24" y1="124" x2="976" y2="124" stroke="#21262d"/>
+<text class="h" x="38" y="156">TOP LANGUAGES</text>
+<text class="t" x="38" y="190">Jupyter Notebook</text>
+<text class="m" x="440" y="190" text-anchor="end">91.5%</text>
+<rect x="38" y="199" width="402" height="4" rx="2" fill="#21262d"/>
+<rect x="38" y="199" width="367.9" height="4" rx="2" fill="#22d3ee"/>
+<text class="t" x="38" y="230">Python</text>
+<text class="m" x="440" y="230" text-anchor="end">4.8%</text>
+<rect x="38" y="239" width="402" height="4" rx="2" fill="#21262d"/>
+<rect x="38" y="239" width="19.2" height="4" rx="2" fill="#22d3ee"/>
+<text class="t" x="38" y="270">JavaScript</text>
+<text class="m" x="440" y="270" text-anchor="end">2.2%</text>
+<rect x="38" y="279" width="402" height="4" rx="2" fill="#21262d"/>
+<rect x="38" y="279" width="8.9" height="4" rx="2" fill="#22d3ee"/>
+<text class="t" x="38" y="310">CSS</text>
+<text class="m" x="440" y="310" text-anchor="end">0.8%</text>
+<rect x="38" y="319" width="402" height="4" rx="2" fill="#21262d"/>
+<rect x="38" y="319" width="3.0" height="4" rx="2" fill="#22d3ee"/>
+<text class="t" x="38" y="350">HTML</text>
+<text class="m" x="440" y="350" text-anchor="end">0.7%</text>
+<rect x="38" y="359" width="402" height="4" rx="2" fill="#21262d"/>
+<rect x="38" y="359" width="3.0" height="4" rx="2" fill="#22d3ee"/>
+<line x1="490" y1="146" x2="490" y2="390" stroke="#21262d"/>
+<text class="h" x="520" y="156">ACTIVITY · LAST 30 DAYS</text>
+<rect x="521.5" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="536.2" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="550.8" y="180.0" width="11.7" height="176.0" rx="1.5" fill="#22d3ee"/>
+<rect x="565.5" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="580.2" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="594.8" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="609.5" y="255.4" width="11.7" height="100.6" rx="1.5" fill="#22d3ee"/>
+<rect x="624.2" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="638.8" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="653.5" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="668.2" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="682.8" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="697.5" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="712.2" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="726.8" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="741.5" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="756.2" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="770.8" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="785.5" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="800.2" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="814.8" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="829.5" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="844.2" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="858.8" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="873.5" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="888.2" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="902.8" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="917.5" y="354" width="11.7" height="2" fill="#21262d"/>
+<rect x="932.2" y="255.4" width="11.7" height="100.6" rx="1.5" fill="#22d3ee"/>
+<rect x="946.8" y="354" width="11.7" height="2" fill="#21262d"/>
+<text class="m" x="520" y="378">2026-10-30</text>
+<text class="m" x="960" y="378" text-anchor="end">2026-11-28</text>
+<text class="m" x="960" y="174" text-anchor="end">max 7/day</text>
+</svg>
